@@ -37,7 +37,7 @@ class Time extends Component {
         <p className="time">
           {this.state.hours}:{this.state.minutes} {this.state.meridiem}
         </p>
-        <p id="seconds" className="rotate">:{this.state.seconds}</p>
+        <p id="seconds" className="rotate">{this.state.seconds}</p>
       </div>
     );
   }

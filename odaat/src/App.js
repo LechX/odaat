@@ -5,19 +5,18 @@ import Moment from 'moment';
 import Date from './Date.js';
 import Time from './Time.js';
 import Weather from './Weather.js';
+import PhysEx from './PhysEx.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">O.D.A.A.T.</h1>
+          <p className="App-title"><img src={logo} className="App-logo" alt="logo" />O.D.A.A.T.</p><Time />
         </header>
         <Date time={Moment()} /> {/* TODO: dynamically respond to arrows */}
-        <Time />
         <Weather city="Portland" state="OR" /> {/* TODO: pass in current location from IP/browser? */}
-        {/* PhysEx */}
+        <PhysEx />
         {/* News/Social */}
         {/* TechXercise */}
         {/* Notes/Diary */}
